@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CS Registration</title>
+
+    <link rel="stylesheet"
+          href="/css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        FREE FIRE
+    </div>
+
+    <nav>
+
+        <a href="/index.html">HOME</a>
+
+        <a href="/tournaments.html">TOURNAMENTS</a>
+
+        <a href="/rules.html">RULES</a>
+
+        <a href="/contact.html">CONTACT</a>
+
+    </nav>
+
+</header>
+
+<div class="registration"
+     style="padding-top:120px;">
+
+    <h1>CLASH SQUAD REGISTRATION</h1>
+
+    <form action="http://localhost:8081/teams"
+          method="POST">
+
+        <input type="text"
+               name="teamName"
+               placeholder="Team Name">
+
+        <input type="text"
+               name="leaderName"
+               placeholder="Leader Name">
+
+        <input type="text"
+               name="whatsapp"
+               placeholder="WhatsApp Number">
+
+        <input type="text"
+               name="email"
+               placeholder="Email">
+
+        <input type="text"
+               name="player2"
+               placeholder="Player 2">
+
+        <input type="text"
+               name="player3"
+               placeholder="Player 3">
+
+        <input type="text"
+               name="player4"
+               placeholder="Player 4">
+
+        <input type="hidden"
+               name="tournamentType"
+               value="CS">
+
+        <button type="submit">
+
+            REGISTER TEAM
+
+        </button>
+
+    </form>
+
+</div>
+
+<footer>
+
+    <p>
+        © 2026 Free Fire Tournament | All Rights Reserved
+    </p>
+
+</footer>
+
+</body>
+
+</html>

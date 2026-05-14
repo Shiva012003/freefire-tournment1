@@ -1,0 +1,465 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+header{
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:25px 60px;
+
+    z-index:1000;
+}
+
+.logo{
+
+    font-size:42px;
+
+    color:orange;
+
+    font-weight:900;
+
+    letter-spacing:3px;
+
+    text-shadow:
+            0 0 10px orange,
+            0 0 20px red;
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    margin-left:35px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    transition:0.3s;
+
+    letter-spacing:1px;
+}
+nav a:hover{
+
+    color:orange;
+
+    text-shadow:
+            0 0 10px orange,
+            0 0 20px orange;
+}
+
+.hero{
+
+    height:100vh;
+
+    background:
+            linear-gradient(
+                    rgba(0,0,0,0.75),
+                    rgba(0,0,0,0.85)
+            ),
+
+            url('/images/freefire.png');
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    position:relative;
+
+    animation:bgZoom 8s infinite alternate;
+}
+
+.hero-content{
+
+    text-align:center;
+
+    z-index:2;
+
+    animation:fadeUp 2s ease;
+}
+
+.hero-content h1{
+
+    font-size:110px;
+
+    color:white;
+
+    letter-spacing:6px;
+
+    text-transform:uppercase;
+
+    text-shadow:
+            0 0 10px orange,
+            0 0 20px orange,
+            0 0 40px red;
+
+    animation:glow 2s infinite alternate;
+}
+
+.hero-content p{
+
+    font-size:28px;
+
+    margin:20px 0;
+
+    color:#ddd;
+
+    letter-spacing:2px;
+}
+
+.btn{
+
+    display:inline-block;
+
+    padding:18px 45px;
+
+    background:linear-gradient(
+            45deg,
+            orange,
+            red
+    );
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:50px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    letter-spacing:2px;
+
+    transition:0.4s;
+
+    box-shadow:
+            0 0 10px orange,
+            0 0 20px red;
+}
+
+.btn:hover{
+
+    transform:
+            scale(1.1)
+            translateY(-5px);
+
+    box-shadow:
+            0 0 20px orange,
+            0 0 40px red,
+            0 0 60px orange;
+}
+
+.registration{
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    position:relative;
+    z-index:9999;
+}
+
+.registration h1{
+    margin-bottom:30px;
+    color:orange;
+}
+
+.registration form{
+    width:400px;
+
+    display:flex;
+    flex-direction:column;
+
+    position:relative;
+    z-index:9999;
+}
+
+.registration input{
+    padding:15px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:10px;
+}
+
+.registration button{
+    padding:15px;
+    background:orange;
+    border:none;
+    border-radius:10px;
+    font-weight:bold;
+    cursor:pointer;
+
+    position:relative;
+    z-index:9999;
+}
+
+.tournament-page{
+    min-height:100vh;
+    padding-top:150px;
+    text-align:center;
+}
+
+.tournament-page h1{
+    font-size:60px;
+    color:orange;
+    margin-bottom:50px;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#1c1c1c;
+    padding:40px;
+    width:320px;
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(255,165,0,0.4);
+    transition:0.4s;
+}
+
+.card:hover{
+
+    transform:
+            translateY(-15px)
+            scale(1.05);
+
+    box-shadow:
+            0 0 20px orange,
+            0 0 40px red;
+}
+
+.card h2{
+    color:orange;
+    margin-bottom:20px;
+}
+
+.card p{
+    margin-bottom:15px;
+    font-size:18px;
+}
+
+.card a{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 30px;
+    background:orange;
+    color:black;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.card a:hover{
+    transform:scale(1.08);
+    background:#ff9900;
+}
+
+.payment-page{
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+
+    padding-top:120px;
+}
+
+.payment-page h1{
+    color:orange;
+    margin-bottom:20px;
+    font-size:50px;
+}
+
+.payment-page p{
+    margin-bottom:20px;
+    font-size:20px;
+}
+
+.qr-image{
+    width:300px;
+    border-radius:20px;
+    margin-bottom:20px;
+}
+
+.payment-page input{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.payment-page button{
+    padding:15px 30px;
+    background:orange;
+    border:none;
+    border-radius:10px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.rules-page,
+.contact-page{
+    min-height:100vh;
+    padding-top:150px;
+    text-align:center;
+    color:white;
+}
+
+.rules-page h1,
+.contact-page h1{
+    color:orange;
+    margin-bottom:40px;
+    font-size:50px;
+}
+
+.rules-page ul{
+    list-style:none;
+}
+
+.rules-page li{
+    margin-bottom:20px;
+    font-size:24px;
+}
+
+.contact-page h2{
+    margin-bottom:20px;
+}
+
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+@keyframes bgZoom{
+
+    0%{
+        background-size:100%;
+    }
+
+    100%{
+        background-size:110%;
+    }
+}
+
+
+@keyframes glow{
+
+    from{
+
+        text-shadow:
+                0 0 10px orange,
+                0 0 20px orange;
+    }
+
+    to{
+
+        text-shadow:
+                0 0 20px orange,
+                0 0 40px red,
+                0 0 60px orange;
+    }
+}
+
+@keyframes bgZoom{
+
+    0%{
+        background-size:100%;
+    }
+
+    100%{
+        background-size:110%;
+    }
+}
+
+
+@keyframes glow{
+
+    from{
+
+        text-shadow:
+                0 0 10px orange,
+                0 0 20px orange;
+    }
+
+    to{
+
+        text-shadow:
+                0 0 20px orange,
+                0 0 40px red,
+                0 0 60px orange;
+    }
+}
+
+@keyframes bgZoom{
+
+    0%{
+        transform:scale(1);
+    }
+
+    100%{
+        transform:scale(1.05);
+    }
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(50px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+    }
+}

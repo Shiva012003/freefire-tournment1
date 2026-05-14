@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Payment</title>
+
+    <link rel="stylesheet"
+          href="/css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        FREE FIRE
+    </div>
+
+    <nav>
+
+        <a href="/index.html">HOME</a>
+
+        <a href="/tournaments.html">TOURNAMENTS</a>
+
+        <a href="/rules.html">RULES</a>
+
+        <a href="/contact.html">CONTACT</a>
+
+    </nav>
+
+</header>
+
+<div class="payment-page">
+
+    <h1>TOURNAMENT PAYMENT</h1>
+
+    <p>
+        Scan QR Code And Pay Entry Fee
+    </p>
+
+    <img src="/images/qr.jpeg"
+         class="qr-image">
+
+    <p>
+        After Payment Upload Screenshot
+    </p>
+
+    <form action="http://localhost:8081/teams/upload"
+          method="POST"
+          enctype="multipart/form-data">
+
+        <input type="file"
+               name="file"
+               required>
+
+        <br><br>
+
+        <button type="submit">
+
+            UPLOAD SCREENSHOT
+
+        </button>
+
+    </form>
+
+</div>
+
+<footer>
+
+    <p>
+        © 2026 Free Fire Tournament
+    </p>
+
+</footer>
+
+</body>
+
+</html>
