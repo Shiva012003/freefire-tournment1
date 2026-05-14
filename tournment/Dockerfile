@@ -4,10 +4,10 @@ WORKDIR /app
 
 COPY . .
 
-RUN chmod +x mvnw
+RUN chmod +x ./mvnw
 
 RUN ./mvnw clean install
 
 EXPOSE 8081
 
-CMD ["java", "-jar", "target/tournment-0.0.1-SNAPSHOT.jar"]
+CMD ["java","-jar","target/tournment-0.0.1-SNAPSHOT.jar"]s
